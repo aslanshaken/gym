@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BOX_GYM</title>
+    <link href="reservation.css" rel="stylesheet" />
+    <script src="rb_formsubmit.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap" rel="stylesheet">
+    <script src="validation.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="nav-image"><img class="logo" src="images/logo.webp" alt="logo" /></div>
+            <div class="nav-calls">
+                <a href="index.html">HOME</a>
+                <a href="reservation.html">MEMBERSHIP</a>
+            </div>
+        </div>
+        <div class="main-image-2">
+            <img src="images/member.webp" alt="header-main-image" />
+        </div>
+    </header>
+
+    <section>
+        </br>
+        </br>
+        <h1 style="text-align: center">Sign up and Choose a plan</h1>
+        <div class="section-intro-2">
+            <h2>#BOXGYM</h2>
+            <p>
+                As for the training, there will be no meaningless moves or over-pushing, and you will have no chance to let your determination go astray. </br>
+                Regardless of your level, our experienced trainers make sure that you will be trained and prepared like a real fighter.</br>
+                The best 1-on-1 training comes with systematic break-down of techniques and fighting strategies to suit the training required </br>
+                by both beginners and more skilful fighters.
+            </p>
+            </br>
+            </br>
+            </br>
+            <p>
+                To guarantee consistency in the quality of training delivered by each trainer, each of our trainers has completed 100 hours of trainings
+                </br>on boxing techniques, pad works, bag works and coaching methodologies with our founder and master trainer. No similar system has ever been
+                </br> deployed for any boxing studio.
+            </p>
+        </div>
+        </br>
+        </br>
+        </br>
+        </br>
+        <br>
+        <form name='registration' onSubmit="return formValidation();" style=" width: 50vw; margin-left : 25vw;">
+            <ul>
+                <li><label for="userid">User id:</label></li>
+                <li><input type="text" name="userid" size="12" /></li>
+                <li><label for="passid">Password:</label></li>
+                <li><input type="password" name="passid" size="12" /></li>
+                <li><label for="username">Name:</label></li>
+                <li><input type="text" name="username" size="50" /></li>
+                <li><label for="address">Address:</label></li>
+                <li><input type="text" name="address" size="50" /></li>
+                <li><label for="country">Country:</label></li>
+                <li><select name="country">
+            <option selected="" value="Default">(Please select a plan)</option>
+            <option value="AF">Classic</option>
+            <option value="AL">PF Black Card</option>
+            <option value="DZ">Platinum</option>
+            <option value="AS">Silver</option>
+            </select></li>
+                <li><label for="zip">ZIP Code:</label></li>
+                <li><input type="text" name="zip" /></li>
+                <li><label for="email">Email:</label></li>
+                <li><input type="text" name="email" size="50" /></li>
+                <li><label id="gender">Sex:</label></li>
+                <li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
+                <li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+                <li><label>Language:</label></li>
+                <li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>
+                <li><input type="checkbox" name="nonen" value="noen" /><span>Spanish</span></li>
+                <li><input type="checkbox" name="nonen" value="noen" /><span>Other</span></li>
+                <li><label for="desc">About:</label></li>
+                <li><textarea name="desc" id="desc"></textarea></li>
+                <li><input type="submit" name="submit" value="Submit" /></li>
+            </ul>
+        </form>
+        <br>
+        <br>
+        <br>
+    </section>
+
+    <footer>
+        <div class="footer-main">
+            <address>
+            OUR LOCATION
+            </br>
+            290 S PARK AVE, NYC, NYC 10010, USA
+            </br>
+            TEL: 407-794-9896
+         </address>
+            <img class="logo" src="images/logo.webp" alt="logo" />
+            <p>
+                OPENING HOURS
+                </br>
+                </br>
+                Mon – Tues: closed
+                </br>
+                Sun, Wed, Thur: 5PM – 11PM
+                </br>
+                Fri – Sat: 5PM – 11:30PM
+                </br>
+                Wednesday – Sunday: 7PM – 1AM
+            </p>
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.0060205311393!2d-73.98902018512624!3d40.739893043846536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a13ca2300d%3A0x1400a8a4875319ba!2s290%20Park%20Ave%20S%2C%20New%20York%2C%20NY%2010010!5e0!3m2!1sen!2sus!4v1652158462494!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </br>
+        </br>
+        </br>
+        Made with <span style="color: #e25555;">&hearts;</span> in NYC
+    </footer>
+</body>
+
+</html>
